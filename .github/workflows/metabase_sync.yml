@@ -2,8 +2,8 @@ name: Metabase → Google Sheets (Daily)
 
 on:
   schedule:
-    # Runs every day at 06:00 UTC (11:30 IST) — adjust to taste
-    - cron: "0 6 * * *"
+    # Runs every day at 00:30 UTC (06:00 IST) — adjust to taste
+    - cron: "30 0 * * *"
 
   # Allow manual runs from the Actions tab
   workflow_dispatch:
