@@ -36,16 +36,16 @@ GCP_SA_JSON       = os.environ["GCP_SERVICE_ACCOUNT_JSON"]
 # Supports both /question/NNN and /card/NNN URLs.
 
 QUERIES = [
-    ("MoM Funnel Card 1",   f"{METABASE_URL}/question/9651"),
-    ("MoM Funnel Card 2",   f"{METABASE_URL}/question/9663"),
-    ("MoM Funnel Card 3",   f"{METABASE_URL}/question/9655"),
-    ("MoM Funnel Card 4",   f"{METABASE_URL}/question/9682"),
-    ("MoM Funnel Card 5",   f"{METABASE_URL}/question/9582"),
-    ("Open Funnel 9658",    f"{METABASE_URL}/question/9658"),
-    ("SCD 9601",            f"{METABASE_URL}/question/9601"),
-    ("SCD 9534",            f"{METABASE_URL}/question/9534"),
-    ("Growth Dashboard v3", f"{METABASE_URL}/question/YOUR_CARD_ID_HERE"),
-    # Add / remove rows freely — tab name can be anything ≤ 100 chars
+    ("All Time RFD Details",   "https://metabase-lierhfgoeiwhr.newtonschool.co/question/10317-rfd-details-excl-cancellation-all-time"),
+    ("Perf RFDs",              "https://metabase-lierhfgoeiwhr.newtonschool.co/question/10293-overall-perf-rfds-all-time"),
+    ("Overall Inbound RFDs",   "https://metabase-lierhfgoeiwhr.newtonschool.co/question/10296-overall-inbound-rfds-all-time"),
+    ("Perf Inbound RFDs",      "https://metabase-lierhfgoeiwhr.newtonschool.co/question/10297-perf-inbound-rfds-all-time"),
+    ("Organic",                "https://metabase-lierhfgoeiwhr.newtonschool.co/question/10298-organic-inbound-rfds-all-time"),
+    ("Masterclass",            "https://metabase-lierhfgoeiwhr.newtonschool.co/question/10288-masterclass-rfds-all-time"),
+    ("Referral",               "https://metabase-lierhfgoeiwhr.newtonschool.co/question/10287-referral-rfds-all-time"),
+    ("Open Funnel",            "https://metabase-lierhfgoeiwhr.newtonschool.co/question/10289-open-funnel-rfds-all-time"),
+    ("Reapplied",              "https://metabase-lierhfgoeiwhr.newtonschool.co/question/10290-reapplied-rfds-all-time"),
+    ("Reactivation",           "https://metabase-lierhfgoeiwhr.newtonschool.co/question/10292-reactivation-rfds-all-time"),
 ]
 
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
