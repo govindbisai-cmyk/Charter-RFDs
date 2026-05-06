@@ -143,7 +143,7 @@ def write_tab(service, spreadsheet_id: str, tab_name: str, cols: list, rows: lis
     # Clear existing content
     service.spreadsheets().values().clear(
         spreadsheetId=spreadsheet_id,
-        range=f"'{tab_name}'",
+        range=f"'{tab_name}'!A:T",
     ).execute()
 
     if not cols:
