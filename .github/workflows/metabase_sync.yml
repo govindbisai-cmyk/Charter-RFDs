@@ -1,0 +1,41 @@
+name: Metabase → Google Sheets (Daily)
+
+on:
+  schedule:
+    # Runs every day at 06:00 UTC (11:30 IST) — adjust to taste
+    - cron: "0 6 * * *"
+
+  # Allow manual runs from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  sync:
+    name: Sync Metabase queries to Sheets
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      # ── 1. Checkout ───────────────────────────────────────────────────────
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # ── 2. Python ─────────────────────────────────────────────────────────
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      # ── 3. Dependencies ───────────────────────────────────────────────────
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # ── 4. Run sync ───────────────────────────────────────────────────────
+      - name: Run metabase_to_sheets.py
+        env:
+          METABASE_URL:               ${{ secrets.METABASE_URL }}
+          METABASE_USERNAME:          ${{ secrets.METABASE_USERNAME }}
+          METABASE_PASSWORD:          ${{ secrets.METABASE_PASSWORD }}
+          GOOGLE_SHEET_ID:            ${{ secrets.GOOGLE_SHEET_ID }}
+          GCP_SERVICE_ACCOUNT_JSON:   ${{ secrets.GCP_SERVICE_ACCOUNT_JSON }}
+        run: python metabase_to_sheets.py
