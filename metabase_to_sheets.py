@@ -83,7 +83,7 @@ def fetch_card_data(card_id: int, session_token: str) -> tuple[list[str], list[l
     resp = requests.post(
         f"{METABASE_URL}/api/card/{card_id}/query/json",
         headers=headers,
-        timeout=120,
+        timeout=300,
     )
 
     if resp.status_code == 200:
