@@ -46,7 +46,7 @@ QUERIES = [
     ("Open Funnel",            "https://metabase-lierhfgoeiwhr.newtonschool.co/question/10289-open-funnel-rfds-all-time"),
     ("Reapplied",              "https://metabase-lierhfgoeiwhr.newtonschool.co/question/10290-reapplied-rfds-all-time"),
     ("Reactivation",           "https://metabase-lierhfgoeiwhr.newtonschool.co/question/10292-reactivation-rfds-all-time"),
-    ("Organic Pure,            "https://metabase-lierhfgoeiwhr.newtonschool.co/question/11238-organic-pure-funnel-rfd-details")
+    ("Organic Pure",            "https://metabase-lierhfgoeiwhr.newtonschool.co/question/11238-organic-pure-funnel-rfd-details")
 ]
 
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
