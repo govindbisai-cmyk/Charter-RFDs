@@ -162,7 +162,7 @@ def write_tab(service, spreadsheet_id: str, tab_name: str, cols: list, rows: lis
         body={"values": values},
     ).execute()
 
-    print(f"  ✅  '{tab_name}' → {len(rows)} rows written.")
+    print(f"  ✅  '{tab_name}' → {len(rows)} rows written.") 
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
