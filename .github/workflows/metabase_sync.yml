@@ -3,7 +3,7 @@ name: Metabase → Google Sheets (Daily)
 on:
   schedule:
     # Runs every day at 00:30 UTC (06:00 IST) — adjust to taste
-       - cron: "30 */3 * * *"
+       - cron: "30 */6 * * *"
 
 
   # Allow manual runs from the Actions tab
@@ -13,7 +13,7 @@ jobs:
   sync:
     name: Sync Metabase queries to Sheets
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 40
 
     steps:
       # ── 1. Checkout ───────────────────────────────────────────────────────
