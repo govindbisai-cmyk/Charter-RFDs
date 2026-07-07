@@ -8,7 +8,7 @@ Environment variables (set as GitHub Actions secrets):
   METABASE_USERNAME   your login email
   METABASE_PASSWORD   your login password
   GOOGLE_SHEET_ID     the long ID from your sheet URL
-  GCP_SERVICE_ACCOUNT_JSON  full contents of your service account JSON
+  GCP_SERVICE_ACCOUNT_JSON  full contents of your service account JSON 
 """
 
 import os 
