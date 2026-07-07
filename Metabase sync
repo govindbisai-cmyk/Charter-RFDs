@@ -3,7 +3,7 @@ name: Metabase → Google Sheets (Daily)
 on:
   schedule:
     # Runs every day at 06:00 UTC (11:30 IST) — adjust to taste
-    - cron: "30 */6 * * *"
+    - cron: "30 */6 * * *" 
 
 
   # Allow manual runs from the Actions tab
