@@ -3,7 +3,7 @@ metabase_to_sheets.py
 Fetches results from Metabase card/question URLs and writes each to a
 separate tab in a Google Sheet.
 
-Environment variables (set as GitHub Actions secrets):
+Environment variables (set as GitHub Actions secrets): 
   METABASE_URL        e.g. https://metabase.yourcompany.co
   METABASE_USERNAME   your login email
   METABASE_PASSWORD   your login password
