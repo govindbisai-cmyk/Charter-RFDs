@@ -12,7 +12,7 @@ jobs:
   sync:
     name: Sync Metabase queries to Sheets
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 40
 
     steps:
       # ── 1. Checkout ───────────────────────────────────────────────────────
