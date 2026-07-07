@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  sync:
+  sync: 
     name: Sync Metabase queries to Sheets
     runs-on: ubuntu-latest
     timeout-minutes: 40
